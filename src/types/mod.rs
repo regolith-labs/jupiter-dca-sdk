@@ -5,7 +5,6 @@
 //! <https://github.com/codama-idl/codama>
 //!
 
-  pub(crate) mod r#withdrawal;
+pub(crate) mod r#withdrawal;
 
-  pub use self::r#withdrawal::*;
-
+pub use self::r#withdrawal::*;

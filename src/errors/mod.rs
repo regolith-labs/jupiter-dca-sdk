@@ -5,7 +5,6 @@
 //! <https://github.com/codama-idl/codama>
 //!
 
-      pub(crate) mod dca;
-  
-      pub use self::dca::DcaError;
-  
+pub(crate) mod dca;
+
+pub use self::dca::DcaError;
