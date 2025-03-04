@@ -1,0 +1,33 @@
+[package]
+name = "jupiter-dca-sdk"
+version = "0.0.1"
+edition = "2021"
+license = "Apache-2.0"
+description = "Rust SDK for Jupiter DCA program"
+documentation = "https://docs.rs/jupiter-dca-sdk/latest/jupiter_dca_sdk/"
+homepage = "https://jup.ag"
+repository = "https://github.com/regolith-labs/jupiter-dca-sdk"
+readme = "./README.md"
+authors = ["Hardhat Chad"]
+keywords = ["solana"]
+
+[lib]
+name = "jupiter_dca_sdk"
+path = "src/lib.rs"
+
+[features]
+serde = ["dep:serde", "serde-big-array", "serde_with"]
+fetch = []
+anchor = ["anchor-lang"]
+anchor-idl-build = ["anchor-lang"]
+
+[dependencies]
+anchor-lang = { version = "0.30", optional = true }
+borsh = "0.10.3"
+num-derive = "0.4.2"
+num-traits = "0.2.19"
+serde = { version = "1.0", features = ["derive"], optional = true }
+serde-big-array = { version = "0.5", optional = true }
+serde_with = { version = "3.12", optional = true }
+solana-program = "=2.1.14"
+thiserror = "2.0.11"
