@@ -5,6 +5,7 @@ This is a Rust client for the [Jupiter DCA](https://jup.ag) program, generated u
 ## Notes
 
 The following features are not yet supported:
+- `anchor`
 - `anchor-idl-build`
 - `serde`
 - `fetch`
